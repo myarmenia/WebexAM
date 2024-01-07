@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\Analytics;
@@ -102,5 +103,5 @@ Route::get('/tables/basic', [TablesBasic::class, 'index'])->name('tables-basic')
 
 Route::group(['middleware' => ['auth']], function () {
   // Route::resource('roles', RoleController::class);
-  // Route::resource('users', UserController::class);
+  Route::resource('users', UserController::class);
 });

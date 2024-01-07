@@ -18,6 +18,22 @@
       ]
     },
     {
+      "menuHeader": "Administration"
+    },
+    {
+      "name": "Users",
+      "icon": "menu-icon tf-icons bx bx bx-dock-top",
+      "slug": "users",
+      "submenu": [
+        {
+          "url": "users",
+          "name": "Users List",
+          "slug": "index"
+        }
+
+      ]
+    },
+    {
       "menuHeader": "Apps & Pages"
     },
     {
