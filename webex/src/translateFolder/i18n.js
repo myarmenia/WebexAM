@@ -2804,7 +2804,7 @@ i18n.use(initReactI18next).init({
       // Add more languages as needed
    },
    lng: localStorage.getItem('lang') ? localStorage.getItem('lang') : 'am', // Default language
-   fallbackLng: localStorage.getItem('lang'), // Fallback language
+   fallbackLng: localStorage.getItem('lang') ? localStorage.getItem('lang') : 'am', // Fallback language
    interpolation: {
       escapeValue: false,
    },

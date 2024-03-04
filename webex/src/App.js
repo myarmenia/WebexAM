@@ -140,14 +140,14 @@ function App() {
                         </PrivateRouteForOutSider>
                      }
                   />
-                  <Route
-                     path="mobile"
-                     element={
-                        <PrivateRouteForOutSider>
-                           <MobailAppDevelopend />
-                        </PrivateRouteForOutSider>
-                     }
-                  />
+                     <Route
+                        path="mobile"
+                        element={
+                           <PrivateRouteForOutSider>
+                              <MobailAppDevelopend />
+                           </PrivateRouteForOutSider>
+                        }
+                     />
                   <Route
                      path="games"
                      element={

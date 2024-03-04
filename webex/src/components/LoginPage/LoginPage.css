@@ -73,7 +73,7 @@
 .btn_dv button {
    color: white;
    text-align: center;
-   font-size: 15px;
+   font-size: 14px;
 }
 
 .log_img_div {
@@ -85,17 +85,17 @@
    height: 100% !important;
 }
 .title_texth1 {
-   width: 80%;
+   width: 90%;
    color: white;
    text-align: center;
    padding-bottom: 70px;
 }
 .register_drop_down {
-   padding-left: 150px;
-   width: 1200px;
-   max-height: calc(500px - 100px);
+   padding-left: 100px;
+   width: 93%;
+   max-height: calc(300px - 50px);
    overflow-y: auto;
-   padding-bottom: 200px;
+   padding-bottom: 500px;
 }
 
 .register_drop_down::-webkit-scrollbar {

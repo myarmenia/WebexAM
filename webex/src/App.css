@@ -5,7 +5,7 @@ font-family: 'Open Sans', sans-serif; */
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   letter-spacing: 3px;
+   /* letter-spacing: 1px; */
    font-weight: 100 !important;
 }
 
@@ -36,10 +36,10 @@ ul {
    --main_font_color: #d5d5d5;
 }
 
- @font-face {
-  font-family:font-1;
-  src: url(./fonts/Roboto-Light.ttf);
-} 
+@font-face {
+   font-family: font-1;
+   src: url(./fonts/Roboto-Light.ttf);
+}
 
 /*
  @media(min-width: 1920px){
