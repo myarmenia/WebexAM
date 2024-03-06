@@ -1,6 +1,9 @@
 .share_div{
     position: relative;
     cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(494%) hue-rotate(316deg) brightness(112%) contrast(99%);
+       filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(494%) hue-rotate(316deg) brightness(112%) contrast(99%);
+    color: white;
 }
 
 .share-buttons{

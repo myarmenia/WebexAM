@@ -14,7 +14,7 @@
 
 .news_main_page .container .category-top-div {
    height: 900px;
-   width: 950px;
+   width: 1190px;
    display: flex;
    flex-direction: column;
    gap: 20px;
@@ -22,6 +22,9 @@
 
 .category-top-div h3 {
    cursor: pointer;
+   filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(494%) hue-rotate(316deg)
+      brightness(112%) contrast(99%);
+   color: white;
 }
 
 .news_main_page .container .category-top-div .category-top-div-block {
@@ -119,7 +122,7 @@
 }
 
 .news_main_page .container .category-top-div .category-top-div--small-div span {
-   color: gray;
+   color: white;
    font-size: 14px;
 }
 

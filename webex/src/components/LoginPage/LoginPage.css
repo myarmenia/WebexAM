@@ -97,7 +97,9 @@
    overflow-y: auto;
    padding-bottom: 500px;
 }
-
+.dtoptext_ul {
+   padding-left: 75px;
+}
 .register_drop_down::-webkit-scrollbar {
    width: 5px;
 }

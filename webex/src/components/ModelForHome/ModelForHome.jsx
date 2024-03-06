@@ -10,7 +10,7 @@ function ModelForHome() {
       const { progress } = useProgress();
       return (
          <Html center className="loader">
-            {progress} %
+           {Math.floor(progress)} %
          </Html>
       );
    }

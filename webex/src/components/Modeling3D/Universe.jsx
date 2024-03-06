@@ -2,11 +2,14 @@ import React, { Suspense, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Html, OrbitControls, Stage, Stars, useProgress } from '@react-three/drei';
 import Merc from '../models/Merc';
+import { useTranslation } from 'react-i18next';
 
 const Universe = () => {
    const [zoom, setZoom] = useState(false);
    const [color, setColor] = useState();
    const [show, setShow] = useState(true);
+
+   const { t, i18n } = useTranslation();
 
    function Loader() {
       const { progress } = useProgress();
@@ -28,18 +31,19 @@ const Universe = () => {
                </Stage>
             </Suspense>
          </Canvas>
-         <div style={{ position: 'absolute', top: '3844px', right: '234' }}>
+         <div style={{ position: 'absolute', top: '3874px', right: '10' }}>
             <button
                style={{
-                  backgroundColor: zoom ? 'red' : 'blueviolet',
+                  backgroundColor: zoom ? '#b378eb' : 'blueviolet',
                   padding: '20',
-                  fontSize: 30,
+                  fontSize: 16,
                   cursor: 'pointer',
+                  width: '150px',
                }}
                onClick={() => {
                   setZoom(!zoom);
                }}>
-               {zoom ? 'Exit' : 'Start'}
+               {zoom ? t('canvas3D.0') : t('canvas3D.1')}
             </button>
 
             <div>
