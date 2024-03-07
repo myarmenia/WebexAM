@@ -408,31 +408,49 @@ function WebProjectPage() {
          </div>
 
          <div className="buttons">
-         
-                     <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.1')}</span></button></NavLink>
-                     </div>
-                     <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.2')}</span></button></NavLink>
-
-                     </div>
-                     <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.3')}</span></button></NavLink>
-                        
-                     </div>
-                     <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.4')}</span></button></NavLink>
-
-                     </div>
-                     <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.5')}</span></button></NavLink>
-
-                     </div>
-                     <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.6')}</span></button></NavLink>
-
-                     </div>
-                  </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.1')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.2')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.3')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.4')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.5')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.6')}</span>
+                  </button>
+               </NavLink>
+            </div>
+         </div>
       </div>
    );
 }

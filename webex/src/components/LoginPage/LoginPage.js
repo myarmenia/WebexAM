@@ -216,7 +216,7 @@ function LoginPage() {
                         </div>
                      </div>
 
-                     <div style={{ display: itemId === el.id ? 'block' : 'none' }}>
+                     <div className="dtoptext_ul" style={{ display: itemId === el.id ? 'block' : 'none' }}>
                         <ul>
                            <li>{t('dropTxt_' + el.id + '.0')}</li>
                            <li>{t('dropTxt_' + el.id + '.1')}</li>

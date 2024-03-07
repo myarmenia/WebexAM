@@ -1,126 +1,128 @@
-.news_unique-page{
-    background-color:  white;
-    padding: 50px 0;
-    min-height: 100vh;
+.news_unique-page {
+   background-color: var(--main_color);
+   padding: 50px 0;
+   min-height: 100vh;
 }
 
-.news_unique-page .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 180px;
+.news_unique-page .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 180px;
 }
 
-.news_unique-page-item{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 1150px;
-    gap: 30px;
+.news_unique-page-item {
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-direction: column;
+   width: 1150px;
+   gap: 30px;
 }
 
-.news_unique-page-item h3{
-    cursor: pointer;
+.news_unique-page-item h3 {
+   cursor: pointer;
+}
+.news_unique-page-item h4 {
+   color: white;
 }
 
-.img_and_info_div{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.img_and_info_div {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
 }
 
-.img_and_info_div img{
-    width: 800px;
-    height: 500px;
-    border-radius: 0;
+.img_and_info_div img {
+   width: 800px;
+   height: 500px;
+   border-radius: 0;
 }
 
-.img_and_info_div span{
-    color: gray;
+.img_and_info_div span {
+   color: white;
 }
 
-.news_unique-page-item p{
-    color: gray;
+.news_unique-page-item p {
+   color: white;
 }
 
-.share_and_date{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.share_and_date {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
 }
 
-.share_and_date> span{
-    border-right: 1px solid gray;
-    padding-right: 20px;
+.share_and_date > span {
+   border-right: 1px solid gray;
+   padding-right: 20px;
 }
-
 
 .loader {
-    width: 48px;
-    height: 48px;
-    border: 5px solid black;
-    border-bottom-color: transparent;
-    border-radius: 50%;
-    display: inline-block;
-    box-sizing: border-box;
-    animation: rotation 1s linear infinite;
-    }
+   width: 48px;
+   height: 48px;
+   border: 5px solid black;
+   border-bottom-color: transparent;
+   border-radius: 50%;
+   display: inline-block;
+   box-sizing: border-box;
+   animation: rotation 1s linear infinite;
+}
 
+.news_unique-page-item h3 {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
 
-    .news_unique-page-item h3{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
+.news_unique-page-item h3 svg {
+   width: 85%;
+   filter: brightness(0) saturate(100%) invert(88%) sepia(4%) saturate(494%) hue-rotate(316deg) brightness(112%) contrast(99%);
+   color: white;
+}
 
-    .news_unique-page-item h3 svg{
-        width: 85%;
-    }
+@media (max-width: 1024px) {
+   .news_unique-page-item {
+      width: 800px;
+   }
 
+   .img_and_info_div img {
+      width: 600px;
+      height: 350px;
+   }
+}
 
-    @media(max-width:1024px){
-        .news_unique-page-item{
-            width: 800px;
-        }
+@media (max-width: 780px) {
+   .news_unique-page-item {
+      width: 600px;
+   }
 
-        .img_and_info_div img{
-            width: 600px;
-            height: 350px;
-        }
-    }
+   .img_and_info_div img {
+      width: 400px;
+      height: 250px;
+   }
+}
 
-    @media(max-width:780px){
-        .news_unique-page-item{
-            width: 600px;
-        }
+@media (max-width: 480px) {
+   .news_unique-page-item {
+      width: 400px;
+   }
 
-        .img_and_info_div img{
-            width: 400px;
-            height: 250px;
-        }
-    }
+   .img_and_info_div img {
+      width: 300px;
+      height: 150px;
+   }
+}
 
-    @media(max-width:480px){
-        .news_unique-page-item{
-            width: 400px;
-        }
-
-        .img_and_info_div img{
-            width: 300px;
-            height: 150px;
-        }
-    }
-
-    @keyframes rotation {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-        } 
+@keyframes rotation {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}

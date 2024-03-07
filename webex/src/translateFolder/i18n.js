@@ -557,30 +557,15 @@ i18n.use(initReactI18next).init({
                'Mobile App Development',
                'Unity Development',
             ],
-               //===============================
+            //===============================
 
-            dropTxt_1: [
-               'element1',
-               'element2',
-               'element3',
-               'element4'
-            ],
+            dropTxt_1: ['element1', 'element2', 'element3', 'element4'],
 
-            dropTxt_2: [
-               'tandz1',
-               'tandz2',
-               'tandz3',
-               'tandz4'
-            ],
+            dropTxt_2: ['tandz1', 'tandz2', 'tandz3', 'tandz4'],
 
-            dropTxt_3: [
-               'shmavon1',
-               'shmavon2',
-               'shmavon3',
-               'shamvon4'
-            ],
+            dropTxt_3: ['shmavon1', 'shmavon2', 'shmavon3', 'shamvon4'],
 
-               // ============================
+            // ============================
             /////3d modeling///////////
             topSideUntilSlider: [
                '3D modeling',
@@ -925,6 +910,8 @@ i18n.use(initReactI18next).init({
                'Setup and support of applications',
                'Development of console games (for PS, Xbox, Wii, etc.)',
             ],
+
+            canvas3D: ['Deactivate control', 'Activate control'],
          },
       },
       am: {
@@ -1049,7 +1036,8 @@ i18n.use(initReactI18next).init({
 
             // ===========================createWebsitesAndMobileApp=============================
 
-            createWebsitesAndMobileApp: 'Վեբ կայքերի, բջջային հավելվածների եւ 3D մոդելների ստեղծում',
+            createWebsitesAndMobileApp:
+               'Վեբ կայքերի, բջջային հավելվածների եւ 3D մոդելների ստեղծում',
 
             createWebsitesAndMobileAppTitle: [
                'Վեբ կայքերի մշակում',
@@ -1838,6 +1826,8 @@ i18n.use(initReactI18next).init({
                'Ծրագրերի տեղադրում եւ աջակցություն',
                'Կոնսոլային խաղերի ստեղծում (PS, Xbox, Wii եւ այլն)',
             ],
+
+            canvas3D: ['Պասիվ. կառավարում', 'Ակտիվ կառավարումը '],
          },
       },
 
@@ -2799,12 +2789,14 @@ i18n.use(initReactI18next).init({
                'Настройка и поддержка приложений',
                'Разработка консольных игр (для PS, Xbox, Wii и др.)',
             ],
+
+            canvas3D: ['Пасив. контроль', 'Актив контроль'],
          },
       },
       // Add more languages as needed
    },
    lng: localStorage.getItem('lang') ? localStorage.getItem('lang') : 'am', // Default language
-   fallbackLng: localStorage.getItem('lang'), // Fallback language
+   fallbackLng: localStorage.getItem('lang') ? localStorage.getItem('lang') : 'am', // Fallback language
    interpolation: {
       escapeValue: false,
    },
