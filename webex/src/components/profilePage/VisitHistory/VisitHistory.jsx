@@ -85,7 +85,7 @@ function VisitHistory() {
                     onMouseEnter={() => handleMouseEnter(index)}
                     onMouseLeave={() => handleMouseLeave(index)}>
                     <td>{index+1}</td>
-                    <td>{item.name}</td>
+                    <td className="lessons_namee">{item.name}</td>
                     <td>{item.total_lessons}</td>
                     <td>{item.current_lesson_number}</td>
                     <td><img src={RightArrow} alt="RightArrow" className="RightArrow" onClick={()=>goToLessonPage(item.id)}/></td>

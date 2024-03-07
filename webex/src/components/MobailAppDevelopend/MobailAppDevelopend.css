@@ -1,0 +1,181 @@
+.mobail_container {
+   background-color: var(--main_color);
+   min-height: 100vh;
+}
+.mobail_container .container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   /* align-items: center; */
+   overflow: hidden;
+}
+
+.mobail_container .support-top-div {
+   height: 300px;
+   background-image: url('../../images/postive-caring-relationships-teachers 1 (3).png');
+   background-position: center center;
+   background-size: cover;
+}
+
+.mobail_container .mobail-top-div .container {
+   flex-direction: column;
+   height: 100%;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+
+.mobail_container h2 {
+   color: var(--main_font_color);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   font-family: 'TitleFont';
+   text-transform: uppercase;
+   background-image: linear-gradient(-225deg, #231557 0%, #010526 29%, #7c1dc9 67%, white 100%);
+   background-size: auto auto;
+   background-clip: border-box;
+   background-size: 200% auto;
+   background-clip: text;
+   text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 3s linear infinite;
+   display: inline-block;
+   font-size: 90px;
+   text-align: center;
+}
+
+.mobi_title {
+   color: white;
+   text-align: center;
+   padding-bottom: 20px;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   width: 70%;
+   margin: 0 auto;
+   padding-top: 50px;
+}
+.mobi_title p {
+   text-align: start;
+}
+.mobi_text {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   color: white;
+   padding-top: 50px;
+}
+.mobi_text p {
+   width: 69%;
+   padding-top: 25px;
+   text-align: start;
+   color: white;
+}
+.mobi_text h3 {
+   width: 69%;
+   padding-top: 25px;
+   text-align: start;
+   color: white;
+}
+
+#h3 {
+   text-align: center;
+   color: white;
+}
+.Development_of_Mobile {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 65px;
+   padding-top: 100px;
+}
+.Development_of_Mobile h4 {
+   color: #26716e;
+}
+.Development_of_Mobile p {
+   color: white;
+}
+.Development_of_Mobile div {
+   width: 33%;
+}
+.solid {
+   width: 100px;
+   border: 1px solid;
+   height: 3px;
+   background: #26716e;
+}
+
+.buttom_side_container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.mobail_ios {
+   width: 67%;
+   color: white;
+   text-align: center;
+   padding: 50px;
+}
+
+/* ///////////////slider side////////////////// */
+.slider_side {
+   width: 100%;
+   background-color: #f5f5f5;
+   text-align: center;
+   padding: 65px 0;
+}
+.swiper {
+   width: 30%;
+   height: 520px;
+}
+
+.swiper-slide {
+   background-position: center;
+   background-size: contain;
+}
+
+.swiper-slide img {
+   display: block;
+   width: 100%;
+}
+
+.diver {
+   width: 70%;
+   height: auto;
+   margin: 0px auto;
+   padding: 100px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.diver div {
+   width: 200px;
+   /* height: 100%; */
+   font-size: 23px;
+   background: #ddd;
+   background-image: linear-gradient(to bottom right, #26716e, #f1e8e8f5);
+   padding: 33px;
+   margin: 5px;
+   text-align: center;
+}
+.diver div > p {
+   font-size: 24px;
+   letter-spacing: 1px;
+}
+.diver div:hover {
+   color: #26716e;
+   font-weight: 700;
+   transform: scale(1.2);
+   transition: 1s;
+}
+
+/* //////////////////middle side under Slider//////////////// */
+
+@keyframes textclip {
+   to {
+      background-position: -200% center;
+   }
+}

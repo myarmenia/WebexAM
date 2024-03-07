@@ -15,7 +15,7 @@ function Footer() {
             <div className='footer-content'>
                 <ul className='footer-menu'>
                     <li><span>{rightArrowIcon} </span>{t('footerMenu.'+ '0')}</li>
-                    <li><span>{t('footerMenu.'+ '1')} </span><a href="#">Info@webex.am</a></li>
+                    <li><span>{t('footerMenu.'+ '1')} </span><a href="#">info@webex.am</a></li>
                     <li><span>{t('footerMenu.'+ '2')} </span>+374 96 10 10 17</li>
                     <li><span>{t('footerMenu.'+ '3')} </span>{t('footerMenu.'+ '4')}</li>
                 </ul>

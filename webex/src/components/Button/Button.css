@@ -1,5 +1,5 @@
 .btn_{
-    color: var(--main_font_color);
+    color: var(--main_font_color) !important;
     font-size: 17px;
     font-style: normal;
     font-weight: 700;

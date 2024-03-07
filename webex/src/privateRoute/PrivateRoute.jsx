@@ -23,7 +23,7 @@ const PrivateRoute = ({ children }) => {
     }, [dispatch, isAuth]);
   
     if (loading) {
-      return <div class="lds-ring">Loader</div>
+      return <div className="lds-ring">Loader</div>
     }
   
     return isAuth ? children : <Navigate to={`/${lang}/login`} />;

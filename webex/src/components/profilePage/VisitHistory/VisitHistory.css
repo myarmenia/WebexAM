@@ -37,3 +37,7 @@ td {
   width: 50px;
   cursor: pointer;
 }
+
+.lessons_namee{
+  overflow-wrap: anywhere;
+}

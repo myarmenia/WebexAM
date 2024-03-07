@@ -13,7 +13,6 @@ import { getIsAuth } from '../store/slices/Auth/AuthSlice'
 
 function HomeWraper() {
   const isAuth = useSelector(getIsAuth)
-console.log(isAuth, 5555)
   return (
     <div>
       <BurgerMenu/>

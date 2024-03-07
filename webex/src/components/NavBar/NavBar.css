@@ -20,6 +20,7 @@
     justify-content: center;
     align-items: center;
     column-gap: 20px;
+  
 }
 
 
@@ -29,6 +30,7 @@
 @media(min-width: 1920px){
     .navbar-rigth-div a, #lng{
         font-size: 20px;
+        color: white;
     }
   }
 
@@ -36,6 +38,7 @@
 @media(max-width: 1920px){
     .navbar-rigth-div a, #lng{
         font-size: 17px;
+        color: white;
     }
     .nav-bar .container > a{
         padding: 10px 5px;
@@ -46,6 +49,7 @@
 @media(max-width: 1440px){
     .navbar-rigth-div a, #lng{
         font-size: 13px;
+        color: white;
     }
     .nav-bar .container > a{
         padding: 10px 5px;
@@ -57,6 +61,7 @@
   @media(max-width: 1140px){
     .navbar-rigth-div a, #lng{
         font-size: 13px;
+        color: white;
     }
     .nav-bar .container > a{
         padding: 10px 5px;

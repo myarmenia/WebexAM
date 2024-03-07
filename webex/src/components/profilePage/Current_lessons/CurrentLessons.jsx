@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import './CurrentLessons.css';
 import kodVideo from '../../../videos/kodVideo.mp4';
 import { allVideoLessons } from '../../Helper/ProfileSidebarHelp/ProfileSidebarHelp';
@@ -44,7 +44,7 @@ function CurrentLessons() {
     // if (isCurrentLessonReq) {
       dispatch(getCurrentLesson({lengId: '0', lessonId: '0'}));
     // }
-  }, []);
+  }, [dispatch]);
 
   const changeHomework = (homework) => {
     setSelectedHomework(homework);
@@ -75,6 +75,18 @@ function CurrentLessons() {
   // console.log("hhh",hhh);
   console.log('allCourses', allCourses);
   // console.log("all_courses",all_courses);
+
+  const videoSource = useMemo(() => {
+    return selectedHomework?.video || allData?.current_lesson?.video || allData?.lessons?.length && allData?.lessons[0]?.video;
+  }, [selectedHomework, allData]);
+
+  const lessons = useSelector(getAllData)?.lessons || [];
+  const fullData = useSelector(getAllData);
+  
+  const memoizedLessons = useMemo(() => lessons, [lessons]);
+  const memoizedFullData = useMemo(() => fullData, [fullData]);
+  
+  
   return (
     <>
       {loading ? (
@@ -108,7 +120,7 @@ function CurrentLessons() {
                     type: 'video',
                     sources: [
                       {
-                        src: selectedHomework?.video || allData?.current_lesson?.video || allData?.lessons[0]?.video,
+                        src: videoSource,
                         type: 'video/mp4',
                       },
                     ],
@@ -176,7 +188,7 @@ function CurrentLessons() {
                 </div>
                 <div className="homework_side">
                   <p className="HomeworkList">{t('cordial')}</p>
-                  <Homeworkes lessons={allData?.lessons} open={open}  fullData={allData} changeHomework = {changeHomework}/>
+                  <Homeworkes lessons={memoizedLessons} changeHomework={changeHomework} />
                 </div>
               </div>
               {/* <div style={{ width: '58vw' }}>
@@ -225,4 +237,4 @@ function CurrentLessons() {
   );
 }
 
-export default CurrentLessons;
+export default React.memo(CurrentLessons, (prev, next)=> JSON.stringify(prev) === JSON.stringify(next));

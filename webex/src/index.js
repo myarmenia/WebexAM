@@ -7,6 +7,8 @@ import { Provider } from 'react-redux';
 import '../src/translateFolder/i18n';
 import store from './store/store';
 import { HelmetProvider } from 'react-helmet-async';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'font-awesome/css/font-awesome.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

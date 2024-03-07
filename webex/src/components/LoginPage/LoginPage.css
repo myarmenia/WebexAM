@@ -1,131 +1,163 @@
-.login{
-    background-color: var(--main_color);
-    /* min-height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-    min-height: 100vh;
+.login {
+   background-color: var(--main_color);
+   /* min-height: 100vh; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0;
+   min-height: 100vh;
 }
 
-.login .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    height: 100%;
-    column-gap: 100px;
+.login .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   height: 100%;
+   column-gap: 100px;
 }
 
-.login .container form{
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    align-items: center;
+.login .container form {
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+   align-items: center;
 }
-
 
 .login .container form input {
-    width: 383px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
-    padding: 0 10px;
-    outline: none;
-    color: var(--main_font_color);
-    font-size: 16px !important;
+   width: 383px;
+   height: 40px;
+   border: 1px solid white;
+   background-color: transparent;
+   padding: 0 10px;
+   outline: none;
+   color: var(--main_font_color);
+   font-size: 16px !important;
 }
 
-.login .container form p{
-    color: red;
-    font-size: 12px;
-    padding-top: 10px;
-    margin: 0;
+.login .container form p {
+   color: red;
+   font-size: 12px;
+   padding-top: 10px;
+   margin: 0;
 }
 
-
-.login .container form h2{
-    color: var(--main_font_color);
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.login .container form h2 {
+   color: var(--main_font_color);
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
 }
 
-.login .container form h6, .login .container form h5{
-    color: var(--main_font_color);
-    font-size: 16px;
-    font-style: normal;
-    line-height: normal;
-    margin-block-start: 0;
-    margin-block-end: 0;
+.login .container form h6,
+.login .container form h5 {
+   color: var(--main_font_color);
+   font-size: 16px;
+   font-style: normal;
+   line-height: normal;
+   margin-block-start: 0;
+   margin-block-end: 0;
 }
 
-.login .container form h6 a, .login .container form h5 span {
-    color: var(--main_font_color);
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration-line: underline;
-    cursor: pointer;
+.login .container form h6 a,
+.login .container form h5 span {
+   color: var(--main_font_color);
+   font-size: 18px;
+   font-style: normal;
+   line-height: normal;
+   text-decoration-line: underline;
+   cursor: pointer;
 }
 
-.log_img_div{
-    width: 900px;
-    height: 400px;
+.btn_dv button {
+   color: white;
+   text-align: center;
+   font-size: 15px;
+}
+
+.log_img_div {
+   width: 780px;
+   height: 400px;
 }
 .log_img_div > canvas {
-    width: 100% !important;
-    height: 100% !important;
+   width: 100% !important;
+   height: 100% !important;
+}
+.title_texth1 {
+   width: 80%;
+   color: white;
+   text-align: center;
+   padding-bottom: 70px;
+}
+.register_drop_down {
+   padding-left: 150px;
+   width: 1200px;
+   max-height: calc(500px - 100px);
+   overflow-y: auto;
+   padding-bottom: 200px;
 }
 
-@media(max-width:1024px){
-    .log_img_div{
-        width: 600px;
-        height: 300px;
-    }
-    .login .container{
-        flex-direction: column-reverse;
-    }
+.register_drop_down::-webkit-scrollbar {
+   width: 5px;
 }
 
-
-@media(max-width:720px){
-    .log_img_div{
-        width: 400px;
-        height: 200px;
-    }
-    .login .container{
-        flex-direction: column-reverse;
-    }
-
-    .login .container form h2{
-        font-size: 20px;
-    }
-    .login{
-        padding: 30px 20px;
-    }
+.register_drop_down::-webkit-scrollbar-track {
+   background: rebeccapurple;
 }
 
-@media(max-width:480px){
-    .log_img_div{
-        width: 300px;
-        height: 200px;
-    }
-    .login .container{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-
-    .login .container form h2{
-        font-size: 20px;
-    }
-    .login{
-        padding: 30px 20px;
-    }
-
-    .login .container form input{
-        width: 300px;
-    }
+.register_drop_down::-webkit-scrollbar-thumb {
+   background: rgb(160, 125, 196);
+}
+.register_drop_down::-webkit-scrollbar-thumb:hover {
+   background: rebeccapurple;
 }
 
+@media (max-width: 1024px) {
+   .log_img_div {
+      width: 600px;
+      height: 300px;
+   }
+   .login .container {
+      flex-direction: column-reverse;
+   }
+}
+
+@media (max-width: 720px) {
+   .log_img_div {
+      width: 400px;
+      height: 200px;
+   }
+   .login .container {
+      flex-direction: column-reverse;
+   }
+
+   .login .container form h2 {
+      font-size: 20px;
+   }
+   .login {
+      padding: 30px 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .log_img_div {
+      width: 300px;
+      height: 200px;
+   }
+   .login .container {
+      flex-direction: column-reverse;
+      padding: 0;
+   }
+
+   .login .container form h2 {
+      font-size: 20px;
+   }
+   .login {
+      padding: 30px 20px;
+   }
+
+   .login .container form input {
+      width: 300px;
+   }
+}

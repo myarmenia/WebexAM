@@ -29,11 +29,12 @@ function NavMenu() {
                     <NavMenuItem index="1" path="/programing" drop={dropIcon}/>
                     <ul className='drop-menu'>
                          <NavMenuItem index="8" path="/web-project"/>
-                         <NavMenuItem index="9" path="/2"/>
-                         <NavMenuItem index="10" path="/3"/>     
-                         <NavMenuItem index="11" path="/3"/>     
-                         <NavMenuItem index="12" path="/3"/>     
-                         <NavMenuItem index="13" path="/3"/>     
+                         <NavMenuItem index="9" path="/website-promotion"/>
+                         <NavMenuItem index="16" path="/3"/>    
+                         <NavMenuItem index="10" path="/support"/>     
+                         <NavMenuItem index="11" path="/3d-modeling"/>     
+                         <NavMenuItem index="12" path="/mobile"/>     
+                         <NavMenuItem index="13" path="/games"/>    
                     </ul> 
 
                 </div>

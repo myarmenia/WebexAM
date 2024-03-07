@@ -29,10 +29,10 @@ function SelectLng() {
         setDefaultLng('Eng')
       }
       else if(leng == "ru"){
-        setDefaultLng("Рус")
+        setDefaultLng("Rus")
       }
       else{
-        setDefaultLng('Հայ')
+        setDefaultLng('Arm')
       }
     },[defaultLng])
       
@@ -41,8 +41,8 @@ function SelectLng() {
     <div className='select-lng'>
        <span>{defaultLng} {lengIcon}</span>
        <ul className='lng-list'>
-          {defaultLng !== 'Հայ' && <li id="am" onClick={(e) => changeLanguage(e.target.id)}>Հայ</li>}
-          {defaultLng !== 'Рус' && <li id="ru" onClick={(e) => changeLanguage(e.target.id)}>Рус</li>}
+          {defaultLng !== 'Arm' && <li id="am" onClick={(e) => changeLanguage(e.target.id)}>Arm</li>}
+          {defaultLng !== 'Rus' && <li id="ru" onClick={(e) => changeLanguage(e.target.id)}>Rus</li>}
           {defaultLng !== 'Eng' && <li id="en" onClick={(e) => changeLanguage(e.target.id)}>Eng</li>}
        </ul>
     </div>

@@ -1,139 +1,164 @@
-.register{
-    background-color: var(--main_color);
-    /* min-height: 100vh; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0;
-    min-height: 100vh;
+.registre_full_div {
+   background-color: var(--main_color);
 }
 
-.register .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    height: 100%;
-    column-gap: 100px;
+.register {
+   background-color: var(--main_color);
+   /* min-height: 100vh; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0;
+   min-height: 100vh;
 }
 
-.register .container form{
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    align-items: center;
+.register .container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap-reverse;
+   height: 100%;
+   column-gap: 100px;
+}
+
+.register .container form {
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+   align-items: center;
 }
 
 .register .container form input {
-    width: 383px;
-    height: 40px;
-    border: 1px solid white;
-    background-color: transparent;
-    padding: 0 10px;
-    outline: none;
-    color: var(--main_font_color);
+   width: 383px;
+   height: 40px;
+   border: 1px solid white;
+   background-color: transparent;
+   padding: 0 10px;
+   outline: none;
+   color: var(--main_font_color);
 }
 
-.register .container form p{
-    color: red;
-    font-size: 12px;
-    padding-top: 10px;
-    margin: 0;
+.register .container form p {
+   color: red;
+   font-size: 12px;
+   padding-top: 10px;
+   margin: 0;
 }
 
-
-.register .container form h2{
-    color: var(--main_font_color);
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.register .container form h2 {
+   color: var(--main_font_color);
+   font-size: 25px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
 }
 
-.register .container form h6{
-    color: var(--main_font_color);
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
+.register .container form h6 {
+   color: var(--main_font_color);
+   font-size: 18px;
+   font-style: normal;
+   line-height: normal;
 }
 
-.register .container form h6 a{
-    color: var(--main_font_color);
-    font-size: 20px;
-    font-style: normal;
-    line-height: normal;
-    text-decoration-line: underline;
+.register .container form h6 a {
+   color: var(--main_font_color);
+   font-size: 20px;
+   font-style: normal;
+   line-height: normal;
+   text-decoration-line: underline;
 }
 
-.reg_img_div{
-    width: 900px;
-    height: 400px;
+.reg_img_div {
+   width: 900px;
+   height: 400px;
 }
 .reg_img_div > canvas {
-    width: 100% !important;
-    height: 100% !important;
+   width: 100% !important;
+   height: 100% !important;
 }
 
-.password-inp, .confirmPassword-inp {
-    position: relative;
+.password-inp,
+.confirmPassword-inp {
+   position: relative;
 }
 
-.password-inp span > svg, .confirmPassword-inp span{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+.password-inp span > svg,
+.confirmPassword-inp span {
+   position: absolute;
+   right: 10px;
+   top: 10px;
 }
 
-@media(max-width:1024px){
-    .reg_img_div{
-        width: 600px;
-        height: 300px;
-    }
-    .register .container{
-        flex-direction: column-reverse;
-    }
+.register_drop_down_item {
+   width: 871px;
+
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
 }
 
-
-@media(max-width:720px){
-    .reg_img_div{
-        width: 400px;
-        height: 200px;
-    }
-    .register .container{
-        flex-direction: column-reverse;
-    }
-
-    .register .container form h2{
-        font-size: 20px;
-    }
-    .register{
-        padding: 30px 20px;
-    }
+.vector_img {
+   height: 30px;
+}
+.register_drop_down_item button {
+   background: linear-gradient(90deg, rgba(135, 68, 172, 0.8) 0%, rgba(71, 66, 190, 0.8) 100%);
+   width: 160px;
+   height: 48px;
+   border-radius: 10px;
 }
 
-@media(max-width:480px){
-    .reg_img_div{
-        width: 300px;
-        height: 200px;
-    }
-    .register .container{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-
-    .register .container form h2{
-        font-size: 20px;
-    }
-    .register{
-        padding: 30px 20px;
-    }
-
-    .register .container form input{
-        width: 300px;
-    }
-
-    
-
+.button_vector {
+   display: flex;
+}
+.rotate {
+   transform: rotate(180deg);
 }
 
+@media (max-width: 1024px) {
+   .reg_img_div {
+      width: 600px;
+      height: 300px;
+   }
+   .register .container {
+      flex-direction: column-reverse;
+   }
+}
+
+@media (max-width: 720px) {
+   .reg_img_div {
+      width: 400px;
+      height: 200px;
+   }
+   .register .container {
+      flex-direction: column-reverse;
+   }
+
+   .register .container form h2 {
+      font-size: 20px;
+   }
+   .register {
+      padding: 30px 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .reg_img_div {
+      width: 300px;
+      height: 200px;
+   }
+   .register .container {
+      flex-direction: column-reverse;
+      padding: 0;
+   }
+
+   .register .container form h2 {
+      font-size: 20px;
+   }
+   .register {
+      padding: 30px 20px;
+   }
+
+   .register .container form input {
+      width: 300px;
+   }
+}
