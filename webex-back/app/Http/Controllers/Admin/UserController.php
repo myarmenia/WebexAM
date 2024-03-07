@@ -18,7 +18,7 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        
+
         $data = User::orderBy('id','DESC');
 
         if($request->role != null){
@@ -41,7 +41,7 @@ class UserController extends Controller
 
         $roles = Role::pluck('name','name')->all();
 
-       
+
         return view('content.users.index', compact('data', 'roles'))
         ->with('i', ($request->input('page', 1) - 1) * 10);
     }
@@ -80,7 +80,6 @@ class UserController extends Controller
         $input['status'] = isset($request->status) ? true : 0;
         $input['payment_status'] = isset($request->payment_status) ? true : 0;
         $input['passport'] = isset($request->passport) ? true : 0;
-
 
         $input['password'] = Hash::make($input['password']);
 
@@ -138,7 +137,7 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-       
+
         $this->validate($request, [
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $id,

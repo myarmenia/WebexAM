@@ -1,0 +1,13 @@
+.model_for_home {
+   display: flex;
+   flex-direction: row;
+   height: 400px;
+}
+
+.model_for_home_1 {
+   width: 50%;
+}
+
+.model_for_home_2 {
+   width: 50%;
+}

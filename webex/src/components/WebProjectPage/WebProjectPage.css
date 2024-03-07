@@ -43,7 +43,7 @@
    -webkit-text-fill-color: transparent;
    animation: textclip 3s linear infinite;
    display: inline-block;
-   font-size: 120px;
+   font-size: 113px;
    text-align: center;
 }
 
@@ -85,25 +85,42 @@
 }
 .container ul {
    color: white;
+   /* padding-left: 75px; */
+}
+.why_ul {
    list-style-type: square;
 }
+
+.Why_to_H {
+   color: #7c1dc9;
+}
+
+.introducing {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
 .diver {
-   width: 80%;
+   width: 70%;
    height: auto;
    margin: 30px auto;
-   display: grid;
-   grid-template-columns: auto auto auto auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 .diver div {
-   width: 90%;
+   width: 200px;
    height: 90%;
-   float: left;
    font-size: 23px;
    background: #ddd;
    background-image: linear-gradient(to bottom right, #26716e, #f1e8e8f5);
    padding: 33px;
    margin: 5px;
    text-align: center;
+}
+.diver div > p {
+   font-size: 21px;
+   letter-spacing: 1px;
 }
 .diver div:hover {
    color: #26716e;
@@ -117,6 +134,12 @@
    text-align: center;
    margin-top: 85px;
    margin-bottom: 100px;
+}
+
+.buttons {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
 }
 
 .middle_div_title {
@@ -195,15 +218,132 @@
    font-size: 18px;
 }
 
+.redColor {
+   color: mediumslateblue;
+}
+
+.mediumslateblueColor {
+   color: mediumslateblue;
+}
+
+/* ===================================== */
+
+.btn-15,
+.btn-15 *,
+.btn-15 :after,
+.btn-15 :before,
+.btn-15:after,
+.btn-15:before {
+   border: 0 solid;
+   box-sizing: border-box;
+}
+.btn-15 {
+   -webkit-tap-highlight-color: transparent;
+   -webkit-appearance: button;
+   background-color: #000;
+   background-image: none;
+   color: #fff;
+   cursor: pointer;
+   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+      Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji,
+      Segoe UI Symbol, Noto Color Emoji;
+   font-size: 100%;
+   font-weight: 900;
+   line-height: 1.5;
+   margin: 0;
+   -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+   padding: 0;
+   text-transform: uppercase;
+}
+.btn-15:disabled {
+   cursor: default;
+}
+.btn-15:-moz-focusring {
+   outline: auto;
+}
+.btn-15 svg {
+   display: block;
+   vertical-align: middle;
+}
+.btn-15 [hidden] {
+   display: none;
+}
+.btn-15 {
+   border-radius: 10px;
+   border-width: 2px;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   position: relative;
+   z-index: 0;
+}
+.btn-15 span {
+   mix-blend-mode: difference;
+}
+.btn-15:after,
+.btn-15:before {
+   --skew: 0.2;
+   background: #fff;
+   content: '';
+   display: block;
+   height: 102%;
+   left: calc(-50% - 50% * var(--skew));
+   pointer-events: none;
+   position: absolute;
+   top: -104%;
+   transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+   transition: transform 0.2s ease;
+   width: 103%;
+}
+.btn-15:after {
+   --progress: 0%;
+   left: calc(50% + 50% * var(--skew));
+   top: 102%;
+   z-index: -1;
+}
+.btn-15:hover:before {
+   --progress: 100%;
+}
+.btn-15:hover:after {
+   --progress: -102%;
+}
+
 @media (max-width: 1440px) {
    .web-project-page .container {
       padding: 50px 100px;
+   }
+
+   .diver {
+      grid-template-columns: auto auto;
+      width: 100%;
    }
 }
 
 @media (max-width: 1024px) {
    .web-project-page h2 {
       font-size: 80px;
+   }
+   .diver {
+      grid-template-columns: auto auto;
+      width: 100%;
+   }
+
+   .web-project-page .container {
+      padding: 50px 80px;
+   }
+}
+
+@media (max-width: 995px) {
+   .web-project-page h2 {
+      font-size: 80px;
+   }
+   .diver {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: auto auto;
+      width: 100%;
    }
 
    .web-project-page .container {
@@ -233,9 +373,23 @@
    .web-project-page h5 {
       font-size: 16px;
    }
+   .diver {
+      grid-template-columns: auto auto;
+      width: 100%;
+   }
 }
 
 @media (max-width: 630px) {
+   .diver {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: auto auto;
+      width: 100%;
+   }
+}
+@media (max-width: 565px) {
    .diver {
       display: flex;
       flex-wrap: wrap;

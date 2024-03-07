@@ -1,51 +1,47 @@
-*{
-  /* font-family: 'Montserrat', sans-serif;
+* {
+   /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif; */
-font-family: 'TitleFont';
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-letter-spacing: 3px;
-font-weight: 100 !important;
+   font-family: 'font-1';
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* letter-spacing: 1px; */
+   font-weight: 100 !important;
 }
-
 
 @font-face {
-  font-family: 'TitleFont';
-  src: url('../src/fonts/BraindGyumri.otf') format('truetype');
- 
+   font-family: 'TitleFont';
+   src: url('../src/fonts/BraindGyumri.otf') format('truetype');
 }
 
-
-.container{
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 0 50px;
-  box-sizing: border-box;
-  
+.container {
+   max-width: 1920px;
+   margin: 0 auto;
+   padding: 0 50px;
+   box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
+   list-style: none;
+   color: var(--main_font_color);
 }
 
-a {
-  text-decoration: none;
+.App a {
+   text-decoration: none;
+   color: white;
 }
 
 :root {
-  --main_color: #010526;
-  --main_font_color: #d5d5d5;
+   --main_color: #010526;
+   --main_font_color: #d5d5d5;
 }
 
+@font-face {
+   font-family: font-1;
+   src: url(./fonts/Roboto-Light.ttf);
+}
 
-
- /* @font-face {
-  font-family:font-1;
-  src: url(./fonts/RobotoFlex-Regular.ttf);
-} 
-
-
+/*
  @media(min-width: 1920px){
   .container{
     max-width: 100%;
@@ -65,13 +61,9 @@ a {
   }
 } */
 
-
-
-
 @media (max-width: 1140px) {
-  .container {
-    max-width: 1140px;
-    padding: 0 20px;
-  }
-} 
-
+   .container {
+      max-width: 1140px;
+      padding: 0 20px;
+   }
+}

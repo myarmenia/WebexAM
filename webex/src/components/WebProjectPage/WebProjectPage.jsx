@@ -2,8 +2,10 @@ import React from 'react';
 import './WebProjectPage.css';
 import KeyWordComponent from '../KeyWordComponent/KeyWordComponent';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 function WebProjectPage() {
+   const leng = localStorage.getItem('lang');
    const { t, i18n } = useTranslation();
    return (
       <div className="web-project-page">
@@ -70,15 +72,29 @@ function WebProjectPage() {
             </p>
 
             <p>{t('development')}</p>
-            
 
             <p>
                <strong>{t('development_crm.0')}</strong> {t('crm_title.0')}
             </p>
             <ul>
-               <li>{t('crm_title.1')}</li>
-               <li>{t('crm_title.2')}</li>
-               <li>{t('crm_title.3')}</li>
+               <li>
+                  <strong className={leng === 'ru' ? 'redColor' : 'mediumslateblueColor  '}>
+                     {t('development_crm.1')}
+                  </strong>
+                  {t('crm_title.1')}
+               </li>
+               <li>
+                  <strong className={leng === 'ru' ? 'redColor' : 'mediumslateblueColor  '}>
+                     {t('development_crm.2')}
+                  </strong>
+                  {t('crm_title.2')}
+               </li>
+               <li>
+                  <strong className={leng === 'ru' ? 'redColor' : 'mediumslateblueColor  '}>
+                     {t('development_crm.3')}
+                  </strong>
+                  {t('crm_title.3')}
+               </li>
                <li>{t('crm_title.4')}</li>
                <li>{t('crm_title.5')}</li>
             </ul>
@@ -349,16 +365,37 @@ function WebProjectPage() {
                <strong>{t('Why_to_H.0')}</strong>
                {t('Why_to_text.0')}
             </p>
-            <p>
-               <strong>{t('Why_to_H.1')}</strong>
-               {t('Why_to_text.1')}
-            </p>
+            <p>{t('Why_to_text.1')}</p>
+            <ul className="why_ul">
+               <li>
+                  {t('Why_to_text.7')}
+                  <a href="mailto:info@webex.am," className="Why_to_H">
+                     {t('Why_to_H.6')}
+                  </a>
+               </li>
+               <li>
+                  {t('Why_to_text.8')}
+                  <strong className="Why_to_H">{t('Why_to_H.7')}</strong>
+               </li>
+               <li>
+                  {t('Why_to_text.9')}
+                  <strong className="Why_to_H">{t('Why_to_H.8')}</strong>
+               </li>
+               <li>
+                  {t('Why_to_text.10')}
+                  <strong className="Why_to_H">{t('Why_to_H.9')}</strong>
+               </li>
+               <li>
+                  {t('Why_to_text.11')}
+                  <strong className="Why_to_H">{t('Why_to_H.10')}</strong>
+               </li>
+            </ul>
             <p>
                {t('Why_to_text.2')}
                <strong>{t('Why_to_H.2')}</strong>
             </p>
             <p>
-               <strong>{t('Why_to_text.3')}</strong>
+               {t('Why_to_text.3')}
                {t('Why_to_H.3')}
             </p>
             <p>
@@ -368,33 +405,50 @@ function WebProjectPage() {
                <strong>{t('Why_to_H.5')}</strong>
                {t('Why_to_text.5')}
             </p>
-
-            <p>
-               <strong>{t('Why_to_H.6')}</strong>
-            </p>
          </div>
 
          <div className="buttons">
-            <div>{t('buttons_title')}</div>
-            <div className="inquiry ">
-               <div className="butt">
-                  <a href="">Website Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Website promotion/ SEO </a>
-               </div>
-               <div className="butt">
-                  <a href="">Service and Support </a>
-               </div>
-               <div className="butt">
-                  <a href="">3d Modeling Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Mobile App Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Unity Development  </a>
-               </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.1')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.2')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.3')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.4')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.5')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.6')}</span>
+                  </button>
+               </NavLink>
             </div>
          </div>
       </div>

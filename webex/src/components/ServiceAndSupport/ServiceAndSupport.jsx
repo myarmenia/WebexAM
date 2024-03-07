@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import KeyWordComponent from '../KeyWordComponent/KeyWordComponent';
 import suportImg from '../../../../webex/src//images/MaintenanceTypesimg.jpg';
 import suportImg1 from '../../../../webex/src//images/MaintenanceTypesimg1.jpg';
+import { NavLink } from 'react-router-dom';
 
 function ServiceAndSupport() {
    const { t, i18n } = useTranslation();
@@ -239,27 +240,32 @@ function ServiceAndSupport() {
          </div>
 
          <div className="buttons">
-            <div>{t('buttons_title')}</div>
-            <div className="inquiry ">
-               <div className="butt">
-                  <a href="">Website Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Website promotion/ SEO </a>
-               </div>
-               <div className="butt">
-                  <a href="">Service and Support </a>
-               </div>
-               <div className="butt">
-                  <a href="">3d Modeling Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Mobile App Development </a>
-               </div>
-               <div className="butt">
-                  <a href="">Unity Development  </a>
-               </div>
-            </div>
+         
+                     <div className="buttons_div_divs">
+                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.1')}</span></button></NavLink>
+                     </div>
+                     <div className="buttons_div_divs">
+                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.2')}</span></button></NavLink>
+
+                     </div>
+                     <div className="buttons_div_divs">
+                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.3')}</span></button></NavLink>
+                        
+                     </div>
+                     <div className="buttons_div_divs">
+                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.4')}</span></button></NavLink>
+
+                     </div>
+                     <div className="buttons_div_divs">
+                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.5')}</span></button></NavLink>
+
+                     </div>
+                     <div className="buttons_div_divs">
+                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.6')}</span></button></NavLink>
+
+                     </div>
+                 
+          
          </div>
       </div>
    );

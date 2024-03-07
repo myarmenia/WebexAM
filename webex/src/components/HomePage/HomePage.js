@@ -14,6 +14,7 @@ import MosaicGridSlide from '../MosaicGridSlide/MosaicGridSlide'
 import { Helmet } from 'react-helmet-async'
 import { useDispatch } from 'react-redux'
 import { getHomePage } from '../../store/slices/HomePageSlice/HomePageApi'
+import ModelForHome from '../ModelForHome/ModelForHome'
 
 
 
@@ -62,6 +63,7 @@ function handleResize(){
               <ToolsInfo/>
               <OurAdvantages/>
               <Services/>
+              <ModelForHome/>
               <CreateWebsitesAndMobileApp/>
               <VideoCoursesSection/>
               <SlideSection/>

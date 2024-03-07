@@ -7,6 +7,7 @@ use App\Http\Controllers\API\Courses\CourseLanguagesController;
 use App\Http\Controllers\API\ForgotPasswordController;
 use App\Http\Controllers\API\Lessons\LessonController;
 use App\Http\Controllers\API\NewsController;
+use App\Http\Controllers\API\ProgrammingCoursesController;
 use App\Http\Controllers\API\SendOrderController;
 use App\Http\Controllers\Email\SendYourQuestionController;
 use App\Http\Controllers\API\TrialCourseController;
@@ -61,6 +62,9 @@ Route::group(['middleware' => ['api', 'setlang']], function ($router) {
     Route::get('dashboard',[DashboardController::class,'index']);
     Route::get('home',[HomeController::class,'home']);
     Route::get('visit-history',[VisitHistoryController::class,'index']);
+    Route::get('programming-courses',ProgrammingCoursesController::class);
+
+
 
     Route::group(['prefix' => 'news'], function ($router) {
         Route::get('getNewsByCategories', [NewsController::class, 'getNewsByCategories']);
