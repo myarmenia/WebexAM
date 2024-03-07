@@ -31,6 +31,8 @@ import {
    selectResetPassword,
    selectResetPasswordLoading,
 } from '../../store/slices/ResetEmailSlice/ResetEmailSlice.js';
+import { getDevCourses } from '../../store/slices/DevelopentCoursisSlice/DevelopentCoursisApi.js';
+import { selectDevCoursesData } from '../../store/slices/DevelopentCoursisSlice/DevelopentCoursisSlice.js';
 function LoginPage() {
    const [viewPassword, setViewPassword] = useState(true);
    const [openModal, setOpenModal] = useState(false);
@@ -52,6 +54,10 @@ function LoginPage() {
    const loading = useSelector(selectLoginLoading);
 
    const loading_for_reset_email = useSelector(selectResetPasswordLoading);
+
+   const respDevCourses = useSelector(selectDevCoursesData)
+
+   console.log(respDevCourses,'ayoooooooo stacvec ');
 
    const leng = localStorage.getItem('lang');
 
@@ -85,6 +91,12 @@ function LoginPage() {
          setItemId(id);
       }
    };
+
+
+   useEffect(()=>{
+      dispatch(getDevCourses())
+   },[])
+
    return (
       <div className="registre_full_div">
          <Formik

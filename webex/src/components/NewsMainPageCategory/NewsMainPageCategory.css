@@ -21,7 +21,7 @@
    cursor: pointer;
 }
 .news_main_page_categorys_div_content {
-   width: 100%;
+   width:100%;
    max-width: 100%;
    display: flex;
    flex-wrap: wrap; /* Items will wrap to the next line if they don't fit */
@@ -41,7 +41,7 @@
 
 .news_main_page_categorys_div_content_item_img_div {
    width: 100%;
-   height: 500px;
+   height: 300px;
    overflow: hidden;
 }
 
