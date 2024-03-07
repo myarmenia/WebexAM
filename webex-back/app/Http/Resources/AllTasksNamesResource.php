@@ -15,6 +15,7 @@ class AllTasksNamesResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
+          'id' => $this->id,
           'title' => $this->translation(session('languages'))->description,
         ];
     }
