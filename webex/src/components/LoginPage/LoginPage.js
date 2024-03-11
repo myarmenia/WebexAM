@@ -31,6 +31,8 @@ import {
    selectResetPassword,
    selectResetPasswordLoading,
 } from '../../store/slices/ResetEmailSlice/ResetEmailSlice.js';
+import { getDevCourses } from '../../store/slices/DevelopentCoursisSlice/DevelopentCoursisApi.js';
+import { selectDevCoursesData } from '../../store/slices/DevelopentCoursisSlice/DevelopentCoursisSlice.js';
 function LoginPage() {
    const [viewPassword, setViewPassword] = useState(true);
    const [openModal, setOpenModal] = useState(false);
@@ -52,6 +54,10 @@ function LoginPage() {
    const loading = useSelector(selectLoginLoading);
 
    const loading_for_reset_email = useSelector(selectResetPasswordLoading);
+
+   const respDevCourses = useSelector(selectDevCoursesData);
+
+   console.log(respDevCourses, 'ayoooooooo stacvec ');
 
    const leng = localStorage.getItem('lang');
 
@@ -85,6 +91,11 @@ function LoginPage() {
          setItemId(id);
       }
    };
+
+   useEffect(() => {
+      dispatch(getDevCourses());
+   }, []);
+
    return (
       <div className="registre_full_div">
          <Formik
@@ -194,35 +205,48 @@ function LoginPage() {
          </Formik>
 
          <div className="title_texth1 ">
-          
             <h1>Ծրագրավորման դասընթացներ</h1>
          </div>
          <div className="register_drop_down">
             <div className="container">
-               {registerDropData.map((el) => (
-                  <div
+               {respDevCourses && respDevCourses.map((el) => (
+
+<div
                      key={el.id}
                      className="register_drop_down_item"
                      onClick={() => hnadleChangeItem(el.id)}>
                      <div className="button_vector">
+                     
                         <div className="btn_dv">
                            <button>
-                              {<span>{el.icon}</span>} {el.title}
+                              {<img src={el.logo} alt="" />} {el.name}
                            </button>
-                           <p>{el.text_p}</p>
+                           <p>{el.description}</p>
                         </div>
                         <div className={`vector_img ${itemId === el.id ? 'rotate' : ''}`}>
                            <img src={vector} alt="" />
                         </div>
                      </div>
 
-                     <div className="dtoptext_ul" style={{ display: itemId === el.id ? 'block' : 'none' }}>
-                        <ul>
-                           <li>{t('dropTxt_' + el.id + '.0')}</li>
-                           <li>{t('dropTxt_' + el.id + '.1')}</li>
-                           <li>{t('dropTxt_' + el.id + '.2')}</li>
-                           <li>{t('dropTxt_' + el.id + '.3')}</li>
-                        </ul>
+                     <div
+                        className="dtoptext_ul"
+                        style={{ display: itemId === el.id ? 'block' : 'none' }}>
+                        <div>
+                           {
+                              el.lessons.map(item => 
+                                 <div key={item.id}>
+                                    <span>{item.title}</span>
+                                    <ul className="task_ul">
+                                      {
+                                       item.tasks.map(task =>
+                                          <li key={task.id}>{task.title}</li>
+                                       )
+                                      }
+                                    </ul>
+                                 </div>
+                              )
+                           }
+                        </div>
                      </div>
                   </div>
                ))}

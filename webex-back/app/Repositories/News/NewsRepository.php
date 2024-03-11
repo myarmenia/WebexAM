@@ -28,7 +28,7 @@ class NewsRepository implements NewsInterface
     public function getNewsByCategories()
     {
         return News::with(['images', 'category', 'translations' ])
-            ->paginate(10)
+            ->get()
             ->groupBy('news_category_id');
     }
 
