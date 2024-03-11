@@ -172,7 +172,7 @@ function CurrentLessons() {
                     ? allData?.current_lesson?.tasks.map((el, index) => (
                         <div className="homework_linne_div" key={index} onClick={() => changeHomework(el)}>
                           <p className="homework_text">
-                          {t('homework_linne.1')} {index+1}: {el?.description}
+                          {t('homework_linneHom.1')} {index+1}: {el?.description}
                           </p>
                           <p>{el.duration} {t('homework_linne.2')}</p>
                         </div>
@@ -180,7 +180,7 @@ function CurrentLessons() {
                     : allData.lessons[0]?.tasks.map((el, index) => (
                         <div className="homework_linne_div" key={index}>
                           <p className="homework_text">
-                          {t('homework_linne.1')} {index+1}: {el?.description}
+                          {t('homework_linneHom.1')} {index+1}: {el?.description}
                           </p>
                           <p>{el.duration} {t('homework_linne.2')}</p>
                         </div>

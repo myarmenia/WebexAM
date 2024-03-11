@@ -428,6 +428,8 @@ i18n.use(initReactI18next).init({
 
             homework_linne: ['Do homework', 'Lesson', 'm'],
 
+            homework_linneHom: ['Do homework', 'Task', 'm'],
+
             cordial: 'Contents',
 
             all_video_lessons: 'All video lessons',
@@ -1346,6 +1348,8 @@ i18n.use(initReactI18next).init({
             ],
 
             homework_linne: ['Կատարել տնային առաջադրանքները', 'Դաս', 'ր․'],
+
+            homework_linneHom: ['Կատարել տնային առաջադրանքները', 'Աառաջադրանք', 'ր․'],
 
             cordial: 'Բովանդակություն',
 
@@ -2299,6 +2303,8 @@ i18n.use(initReactI18next).init({
             description: 'Описание',
 
             homework_linne: ['Делать домашнюю работу', 'Урок', 'м'],
+
+            homework_linneHom: ['Делать домашнюю работу', 'Задание', 'м'],
 
             cordial: 'Содержание',
 
