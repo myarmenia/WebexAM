@@ -111,6 +111,7 @@
 .button_vector {
    display: flex;
    justify-content: space-evenly;
+   gap: 950px;
 }
 .rotate {
    transform: rotate(180deg);
