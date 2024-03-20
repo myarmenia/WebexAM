@@ -256,6 +256,11 @@ export const packageTxts = {
       icon: closeLockIcon,
       _id: '3',
    },
+   premium_package: {
+      txt: 'Բազային գիտելիքներ, որոոնք կօգնեն Ձեզ տիրապետելու այն ծրագրավորման լեզուներին և մեթոդներին, որոնց օգնությամբ դուք կարող եք աշխատել եբ ծրագրավորման ոլորտում։',
+      icon: closeLockIcon,
+      _id: '4',
+   },
 };
 export const VideoCoursesSectionData = [
    {
@@ -278,6 +283,13 @@ export const VideoCoursesSectionData = [
       timeLine: 'Տեվողությունը-1440 Րոպե',
       value: 'Արժեքը-60000 Դրամ',
    },
+
+   {
+      title: 'Պրոֆեսիոնալ փաթեթներ',
+      type: 'premium_package',
+      timeLine: 'Տեվողությունը-1440 Րոպե',
+      value: 'Արժեքը-60000 Դրամ',
+   }
 ];
 
 // ============================slide=========================================

@@ -209,47 +209,44 @@ function LoginPage() {
          </div>
          <div className="register_drop_down">
             <div className="container">
-               {respDevCourses && respDevCourses.map((el) => (
-
-<div
-                     key={el.id}
-                     className="register_drop_down_item"
-                     onClick={() => hnadleChangeItem(el.id)}>
-                     <div className="button_vector">
-                     
-                        <div className="btn_dv">
-                           <button>
-                              {<img src={el.logo} alt="" />} {el.name}
-                           </button>
-                           <p>{el.description}</p>
-                        </div>
-                        <div className={`vector_img ${itemId === el.id ? 'rotate' : ''}`}>
-                           <img src={vector} alt="" />
-                        </div>
-                     </div>
-
+               {respDevCourses &&
+                  respDevCourses.map((el) => (
                      <div
-                        className="dtoptext_ul"
-                        style={{ display: itemId === el.id ? 'block' : 'none' }}>
-                        <div>
-                           {
-                              el.lessons.map(item => 
+                        key={el.id}
+                        className="register_drop_down_item"
+                        onClick={() => hnadleChangeItem(el.id)}>
+                        <div className="button_vector">
+                           <div className="btn_dv">
+                              <button>
+                                 {<img src={el.logo} alt="" />} {el.name}
+                              </button>
+                              <p>{el.description}</p>
+                           </div>
+                           <div className={`vector_img ${itemId === el.id ? 'rotate' : ''}`}>
+                              <img src={vector} alt="" />
+                           </div>
+                        </div>
+
+                        <div
+                           className="dtoptext_ul"
+                           style={{ display: itemId === el.id ? 'block' : 'none' }}>
+                           <div className="task_ul_block">
+                              {el.lessons.map((item, index) => (
                                  <div key={item.id}>
-                                    <span>{item.title}</span>
+                                    <span>
+                                       {index + 1}) {item.title}
+                                    </span>
                                     <ul className="task_ul">
-                                      {
-                                       item.tasks.map(task =>
+                                       {item.tasks.map((task) => (
                                           <li key={task.id}>{task.title}</li>
-                                       )
-                                      }
+                                       ))}
                                     </ul>
                                  </div>
-                              )
-                           }
+                              ))}
+                           </div>
                         </div>
                      </div>
-                  </div>
-               ))}
+                  ))}
             </div>
          </div>
       </div>

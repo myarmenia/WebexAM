@@ -4,11 +4,13 @@
 
 .register {
    background-color: var(--main_color);
-   /* min-height: 100vh; */
    display: flex;
    justify-content: center;
    align-items: center;
    padding: 100px 0;
+}
+
+.register_page {
    min-height: 100vh;
 }
 
@@ -101,6 +103,11 @@
 .vector_img {
    height: 30px;
 }
+
+.register_drop_down {
+   padding: 50px;
+}
+
 .register_drop_down_item button {
    background: linear-gradient(90deg, rgba(135, 68, 172, 0.8) 0%, rgba(71, 66, 190, 0.8) 100%);
    width: 160px;
@@ -110,8 +117,8 @@
 
 .button_vector {
    display: flex;
-   justify-content: space-evenly;
-   gap: 950px;
+   justify-content: space-between;
+   /* gap: 950px; */
 }
 .rotate {
    transform: rotate(180deg);

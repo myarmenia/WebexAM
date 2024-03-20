@@ -155,7 +155,8 @@ i18n.use(initReactI18next).init({
 
             // ==================videoCoursesSection=====================
 
-            videoCoursesSectionTitle: 'Programming learning plan',
+            videoCoursesSectionTitle: 'Programming learning list',
+            videoCoursesSectionTitle_H: 'Programming learning plan',
 
             videoCoursesSectionTxt: [
                'Free trial lesson. Our future students. You have the opportunity to familiarize yourself with Webex Technologies teaching methods and teachers for free.',
@@ -163,15 +164,29 @@ i18n.use(initReactI18next).init({
                'Advanced programming course. Dear students. To improve your skills, we offer you an advanced course. At Webex Technologies, you can increase your knowledge and level of expertise in your preferred field. To do this, you need to register.',
             ],
 
+            videoCoursesSectionfeatures: [
+            'free',
+            'group',
+            'partial individual approach',
+            'individual approach',
+            ],
+
             VideoCoursesSection_duration: [
                'Duration - 120 minutes',
                'Duration - 960 minutes',
                'Duration - 1440 minutes',
+               'Duration - 1440 minutes',
             ],
 
-            VideoCoursesSection_value: ['Value 0 AMD', 'Value 45000 AMD', 'Value 60000 AMD'],
+            VideoCoursesSection_value: ['Value 0 AMD', 'Value 45000 AMD', 'Value 60000 AMD','Value 120000 AMD'],
 
-            VideoCoursesSection_title: ['Trial course', 'Standart course', 'Professional course'],
+            VideoCoursesSection_title: ['Trial course', 'Standart course', 'Professional course','Premium course'],
+
+            videoCoursesSectionTitleGround: ['React JS', 'Java', 'Laravel','Node.JS'],
+            videoCoursesSectionTitleCourses: 'Course',
+            videoCoursesSectionTitleCourses_month: '6 month-3times/week',
+
+
             // ===============Footer=======================
 
             footerMenu: [
@@ -1074,7 +1089,8 @@ i18n.use(initReactI18next).init({
 
             // ==================videoCoursesSection=====================
 
-            videoCoursesSectionTitle: 'Ծրագրավորման ուսուցման պլան',
+            videoCoursesSectionTitle: 'Ծրագրավորման ուսուցման ցանկ',
+            videoCoursesSectionTitle_H: 'Ծրագրավորման ուսուցման պլան ',
 
             videoCoursesSectionTxt: [
                'Անվճար փորձնական դաս. Մեր ապագա ուսանողները. Դուք հնարավորություն ունեք անվճար ծանոթանալու Webex Technologies-ի դասավանդման մեթոդներին և դասավանդողներին։',
@@ -1082,19 +1098,32 @@ i18n.use(initReactI18next).init({
                'Ծրագրավորման խորացված դասընթաց. Սիրելի ուսանողներ. Ձեր հմտությունները բարելավելու համար մենք ձեզ առաջարկում ենք խորացված դասընթաց։ Webex Technologies-ում դուք կարող եք բարձրացնել ձեր գիտելիքները և ձեր մասնագիտացման մակարդակը նախընտրելի ոլորտում: Դա անելու համար անհրաժեշտ է գրանցվել։',
             ],
 
+            videoCoursesSectionfeatures: [
+               'անվճար',
+               'խմբաին',
+               'մասնակի անհատական մոտեցում',
+               'անհատական մոտեցում',
+               ],
+
+            videoCoursesSectionTitleGround: ['React JS', 'Java', 'Laravel','Node.JS'],
+
             VideoCoursesSection_duration: [
                'Տեվողությունը-120 Րոպե',
                'Տեվողությունը-960 Րոպե',
                'Տեվողությունը-1440 Րոպե',
+               'Տեվողությունը-1440 Րոպե',
             ],
 
-            VideoCoursesSection_value: ['Արժեքը 0 դրամ', 'Արժեքը 45000 դրամ', 'Արժեքը 60000 դրամ'],
+            VideoCoursesSection_value: ['Արժեքը 0 դրամ', 'Արժեքը 45000 դրամ', 'Արժեքը 60000 դրամ','Արժեքը 120000 դրամ'],
 
             VideoCoursesSection_title: [
                'Փորձնական դասընթաց',
                'Ստանդարտ փաթեթ',
                'Պրոֆեսիոնալ փաթեթ',
+               'Պրեմիում դասընթաց'
             ],
+            videoCoursesSectionTitleCourses_month: '6 ամիս-շաբաթը 3օր',
+            videoCoursesSectionTitleCourses: 'Courses',
             // ==================Footer===========================
 
             footerMenu: [
@@ -2018,7 +2047,8 @@ i18n.use(initReactI18next).init({
 
             // ==================videoCoursesSection=====================
 
-            videoCoursesSectionTitle: 'План обучения программированию',
+            videoCoursesSectionTitle: 'Список обучения программированию',
+            videoCoursesSectionTitle_H: 'План обучения программированию',
 
             videoCoursesSectionTxt: [
                'Бесплатный пробный урок. Наши будущие студенты. У вас есть возможность бесплатно ознакомится с методами обучения, и преподавателями компании Webex Technologies.',
@@ -2026,9 +2056,17 @@ i18n.use(initReactI18next).init({
                'Углубленный курс по программированию. Дорогие студенты. Для поднятия квалификации вам предлагается, углубленный курс. В компании Webex Technologies вы можете повысить знания и ваш уровень специализации в узкой области. Для этого вам нужно зарегистрироваться.',
             ],
 
+            videoCoursesSectionfeatures: [
+               'бесплатно',
+               'группа',
+               'частичный индивидуальный подход',
+               'индивидуальный подход',
+               ],
+
             VideoCoursesSection_duration: [
                'Продолжительность - 120 минут',
                'Продолжительность - 960 минут',
+               'Продолжительность - 1440 минут',
                'Продолжительность - 1440 минут',
             ],
 
@@ -2036,13 +2074,19 @@ i18n.use(initReactI18next).init({
                'Ценность 0 АМД',
                'Ценность 45000 АМД',
                'Ценность 60000 АМД',
+               'Ценность 120000 АМД',
+               
             ],
 
             VideoCoursesSection_title: [
                'Пробный курс',
                'Стандартный пакет',
                'Профессиональный пакет',
+               'Премиум курс'
             ],
+            videoCoursesSectionTitleGround: ['React JS', 'Java', 'Laravel','Node.JS'],
+            videoCoursesSectionTitleCourses: 'Курс:',
+            videoCoursesSectionTitleCourses_month: '6 месяцев-3 раза в неделю',
 
             // ==========================Footer============================
 

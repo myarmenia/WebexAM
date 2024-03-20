@@ -16,6 +16,8 @@ function AbouteUsPage() {
 
     const { t, i18n } = useTranslation()
 
+    
+
 
     useEffect(() => {
         document.body.style.overflow = openOrderModal ? 'hidden' : 'auto';

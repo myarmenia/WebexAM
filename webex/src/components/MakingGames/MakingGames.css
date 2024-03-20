@@ -96,7 +96,7 @@
 
 /* ==========uniti============= */
 
-.icon {
+.icon_games {
    overflow: hidden;
    width: 290px;
    display: flex;
@@ -107,14 +107,14 @@
    gap: 20px;
 }
 
-.icon svg {
+.icon_games svg {
    transition: all 1s;
 }
-.icon:hover svg {
+.icon_games:hover svg {
    transform: scale(1.2);
 }
 
-.icon p {
+.icon_games p {
    color: white;
    font-size: 30px;
 }

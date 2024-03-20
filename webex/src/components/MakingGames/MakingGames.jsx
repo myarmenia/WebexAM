@@ -77,7 +77,7 @@ function MakingGames() {
             {/* ============uniti============== */}
             <div className="uniti">{t('uniti')}</div>
             <div className="uniti_icon">
-               <div className="icon">
+               <div className="icon_games">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width={100}
@@ -93,7 +93,7 @@ function MakingGames() {
                   </div>
                </div>
 
-               <div className="icon">
+               <div className="icon_games">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width={100}
@@ -108,7 +108,7 @@ function MakingGames() {
                      <p>{t('uniti_text.3')}</p>
                   </div>
                </div>
-               <div className="icon">
+               <div className="icon_games">
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      width={100}

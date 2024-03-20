@@ -108,7 +108,7 @@ function Registre() {
                handleSubmit,
                dirty,
             }) => (
-               <div className="register">
+               <div className="register register_page">
                   <div className="container">
                      <form
                         className="reg-form"

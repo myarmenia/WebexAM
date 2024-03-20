@@ -1,112 +1,156 @@
-.course-registration-page{
-    background-color: var(--main_color);
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
+.course-registration-page-block {
+   background-color: var(--main_color);
+
+   min-height: 100vh;
+}
+.course-registration-page {
+   padding: 100px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap-reverse;
 }
 
-.course-registration-page .register{
-    padding: 0;
+.course-registration-page .register {
+   padding: 0;
 }
 
-.change-form-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 30px;
+.change-form-div {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 30px;
 }
 
-.forms-div{
-    display: flex;
-    justify-content: center;
+.forms-div {
+   display: flex;
+   justify-content: center;
 }
 
-.radio-inp input{
-    width: 30px !important;
-    height: 30px;
+.radio-inp input {
+   width: 30px !important;
+   height: 30px;
 }
 
-.select{
-    width: 383px;
+.select {
+   width: 383px;
 }
-#courses{
-    width: 100%;
-    height: 40px;
-    background-color: transparent;
-    color: var(--main_font_color);
-    outline: none;
-    border: 1px solid white;
-}
-
-#courses option{
-    background-color: var(--main_color);
+#courses {
+   width: 100%;
+   height: 40px;
+   background-color: transparent;
+   color: var(--main_font_color);
+   outline: none;
+   border: 1px solid white;
 }
 
-.radio-inp{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.radio-inp label input{
-    display: none;
+#courses option {
+   background-color: var(--main_color);
 }
 
-.label-btns{
-    display: flex;
-    gap: 85px;
+.radio-inp {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.radio-inp label input {
+   display: none;
 }
 
-
-.change-form-div .course-forms-div{
-    align-items: flex-start !important;
+.label-btns {
+   display: flex;
+   gap: 85px;
 }
 
-
-
- .login{
-    align-items: flex-start !important;
+.change-form-div .course-forms-div {
+   align-items: flex-start !important;
 }
 
-
-.register{
-    align-items: flex-start !important;
+.login {
+   align-items: flex-start !important;
 }
 
-
-
-.online-btn, .ofline-btn{
-    width: 175px;
-    height: 30px;
+.register {
+   align-items: flex-start !important;
 }
 
-
-
-.course-registration-page .container .reg-form input{
-    width: 440px;
+.online-btn,
+.ofline-btn {
+   width: 175px;
+   height: 30px;
+   color: var(--main_font_color);
 }
 
-
-
-@media(max-width:480px){
-
-    .online-btn, .ofline-btn{
-        width: 135px;
-        height: 30px;
-    
+.course-registration-page .container .reg-form input {
+   width: 440px;
 }
 
-.course-registration-page .container .reg-form input{
-    width: 300px;
+@media (max-width: 480px) {
+   .online-btn,
+   .ofline-btn {
+      width: 135px;
+      height: 30px;
+   }
+
+   .course-registration-page .container .reg-form input {
+      width: 300px;
+   }
+
+   .label-btns {
+      gap: 27px;
+   }
+
+   .course-registration-page .reg-form > .btn {
+      width: 89%;
+   }
 }
 
-.label-btns{
-    gap: 27px;
+.respDeivdata {
+   width: 93%;
+   height: 30px;
+   padding-left: 30px;
+   border: solid 1px red;
+   color: antiquewhite;
+   display: flex;
 }
 
-.course-registration-page .reg-form > .btn{
-    width: 89%;
+.btn_div {
+   width: 94%;
+   color: white;
+   padding-left: 100px;
+   min-height: 200px;
 }
+.btn_div p {
+   margin-bottom: 0;
+}
+
+.btn_div button {
+   color: white;
+   text-align: center;
+   font-size: 14px;
+   background: linear-gradient(90deg, rgba(135, 68, 172, 0.8) 0%, rgba(71, 66, 190, 0.8) 100%);
+   width: 160px;
+   height: 48px;
+   border-radius: 10px;
+}
+.btn_div button img {
+   width: 20px;
+   height: 20px;
+}
+
+.resp-drop-down_itemId {
+   width: 93%;
+
+   padding-left: 30px;
+}
+.dv_button {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.dropUL {
+   padding-left: 120px;
+   color: white;
 }

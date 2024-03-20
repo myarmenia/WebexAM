@@ -16,7 +16,7 @@ function ContactUsPage() {
 
     const respFeedBack = useSelector(selectFeedBAck)
     const loading = useSelector(selectFeedBAckLoading)
-    console.log(respFeedBack.data);
+    
     const {t, i18n} = useTranslation()
 
     const dispatch = useDispatch()
