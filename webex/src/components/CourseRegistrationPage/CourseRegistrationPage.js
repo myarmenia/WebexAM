@@ -237,7 +237,7 @@ function CourseRegistrationPage() {
                               className="dropUL"
                               style={{ display: item === el.id ? 'block' : 'none' }}>
                               {el.lessons.map((item, index) => (
-                                 <div key={item.id}>
+                                 <div key={item.id} >
                                     <span>
                                        {index + 1}) {item.title}
                                     </span>

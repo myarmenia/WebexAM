@@ -57,7 +57,7 @@ function LoginPage() {
 
    const respDevCourses = useSelector(selectDevCoursesData);
 
-   console.log(respDevCourses, 'ayoooooooo stacvec ');
+  
 
    const leng = localStorage.getItem('lang');
 
@@ -232,9 +232,10 @@ function LoginPage() {
                            style={{ display: itemId === el.id ? 'block' : 'none' }}>
                            <div className="task_ul_block">
                               {el.lessons.map((item, index) => (
-                                 <div key={item.id}>
+                                 <div key={item.id}  className="div_ul_task">
                                     <span>
                                        {index + 1}) {item.title}
+                  
                                     </span>
                                     <ul className="task_ul">
                                        {item.tasks.map((task) => (

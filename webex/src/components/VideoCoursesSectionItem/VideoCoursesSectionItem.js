@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Button from '../Button/Button';
-import './VideoCoursesSectionItem.css';
+import './VideoCoursesSectionItemm.css';
 import { useTranslation } from 'react-i18next';
 
 function VideoCoursesSectionItem({ id, title, value, timeLine, icon, txt }) {

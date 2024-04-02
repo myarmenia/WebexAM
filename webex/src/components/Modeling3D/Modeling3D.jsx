@@ -29,6 +29,7 @@ import Universe from './Universe';
 
 function Modeling3D() {
    const { t, i18n } = useTranslation();
+   const leng = localStorage.getItem('lang');
    return (
       <div className="all_modeling3d">
           <div className="web-project-page-top-div">
@@ -409,30 +410,48 @@ function Modeling3D() {
                </div>
                <div className="buttons_side">
              
-                     <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.1')}</span></button></NavLink>
+               <div className="buttons_div_divs">
+                        <NavLink to={`/${leng}/web-project`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.1')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.2')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/website-promotion`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.2')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.3')}</span></button></NavLink>
-                        
+                        <NavLink to={`/${leng}/support`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.3')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.4')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/3d-modeling`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.4')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.5')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/mobile`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.5')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.6')}</span></button></NavLink>
-
-                    
-                  </div>
+                        <NavLink to={`/${leng}/games`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.6')}</span>
+                           </button>
+                        </NavLink>
+                         </div>
                </div>
             </div>
          </div>

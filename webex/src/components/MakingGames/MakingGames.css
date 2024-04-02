@@ -44,7 +44,10 @@
    font-size: 90px;
    text-align: center;
 }
-
+.games_title {
+   width: 100%;
+   text-align: center;
+}
 .mobi_title {
    color: white;
    text-align: center;
@@ -165,7 +168,7 @@
    margin: 5px;
    text-align: center;
 }
- .diver div:hover {
+.diver div:hover {
    color: #26716e;
    font-weight: 700;
    transform: scale(1.2);

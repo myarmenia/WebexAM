@@ -24,11 +24,12 @@ import { NavLink } from 'react-router-dom';
 
 function MakingGames() {
    const { t, i18n } = useTranslation();
+   const leng = localStorage.getItem('lang');
    return (
       <div className="games_container">
          <div className="mobail-top-div">
             <div className="container">
-               <h2>{t('suport')}</h2>
+               <h2 className="games_title">{t('games_title')}</h2>
             </div>
          </div>
 
@@ -223,48 +224,48 @@ function MakingGames() {
                      <p>{t('buttonsSide.0')}</p>
                   </div>
                   <div className="buttons_side">
-                     <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                  <div className="buttons_div_divs">
+                        <NavLink to={`/${leng}/web-project`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.1')}</span>
                            </button>
                         </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                        <NavLink to={`/${leng}/website-promotion`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.2')}</span>
                            </button>
                         </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                        <NavLink to={`/${leng}/support`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.3')}</span>
                            </button>
                         </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                        <NavLink to={`/${leng}/3d-modeling`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.4')}</span>
                            </button>
                         </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                        <NavLink to={`/${leng}/mobile`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.5')}</span>
                            </button>
                         </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a">
+                        <NavLink to={`/${leng}/games`}>
                            <button class="btn-15">
                               <span>{t('buttonsSide.6')}</span>
                            </button>
                         </NavLink>
-                     </div>
+                         </div>
                   </div>
                </div>
             </div>

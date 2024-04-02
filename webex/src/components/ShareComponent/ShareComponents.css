@@ -13,7 +13,7 @@
    flex-direction: column;
    align-items: flex-start;
    gap: 10px;
-   /* background-color: white; */
+   background-color: white;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.704);
    border-radius: 6px;
    padding: 10px;
@@ -26,6 +26,7 @@
 
 .share_div:hover .share-buttons {
    display: flex;
+   color: black;
 }
 
 .share_div:hover > span svg path {
@@ -33,5 +34,8 @@
 }
 
 .share-buttons span:hover {
+   color: black;
+}
+.share-buttons button{
    color: black;
 }

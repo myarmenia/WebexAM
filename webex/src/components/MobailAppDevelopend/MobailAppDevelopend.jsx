@@ -30,11 +30,14 @@ import { NavLink } from 'react-router-dom';
 
 function MobailAppDevelopend() {
    const { t, i18n } = useTranslation();
+
+   const leng = localStorage.getItem('lang');
+
    return (
       <div className="mobail_container">
          <div className="mobail-top-div">
             <div className="container">
-               <h2>{t('suport')}</h2>
+               <h2>{t('mobail')}</h2>
             </div>
          </div>
 
@@ -61,7 +64,7 @@ function MobailAppDevelopend() {
                modules={[Autoplay, EffectFade, Navigation, Pagination]}
                className="mySwiper">
                <SwiperSlide>
-                  <img src={mobailImg1} alt="slider3d1"  />
+                  <img src={mobailImg1} alt="slider3d1" />
                </SwiperSlide>
                <SwiperSlide>
                   <img src={mobailImg2} alt="slider3d2" />
@@ -160,90 +163,109 @@ function MobailAppDevelopend() {
             </div>
             <div className="bottom_side">
                <div className="bottom_side_textss">
-                  <p className="bottom_side_p1">{t('bottomSideTexts.0')}</p>
-                  <span className="bottom_side_p2">{t('bottomSideTexts.1')}</span>
-                  <p className="bottom_side_p3">{t('bottomSideTexts.2')}</p>
+                  <p className="bottom_side_p1">{t('bottomSideTexts_mobile.0')}</p>
+                  <span className="bottom_side_p2">{t('bottomSideTexts_mobile.1')}</span>
+                  <p className="bottom_side_p3">{t('bottomSideTexts_mobile.2')}</p>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.3')} </span>
-                     <span>{t('bottomSideTexts.4')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.3')} </span>
+                     <span>{t('bottomSideTexts_mobile.4')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.5')}</span>
-                     <span>{t('bottomSideTexts.6')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.5')}</span>
+                     <span>{t('bottomSideTexts_mobile.6')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.7')} </span>
-                     <span>{t('bottomSideTexts.8')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.7')} </span>
+                     <span>{t('bottomSideTexts_mobile.8')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.9')}</span>
-                     <span>{t('bottomSideTexts.10')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.9')}</span>
+                     <span>{t('bottomSideTexts_mobile.10')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.11')} </span>
-                     <span>{t('bottomSideTexts.12')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.11')} </span>
+                     <span>{t('bottomSideTexts_mobile.12')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.13')}</span>
-                     <span>{t('bottomSideTexts.14')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.13')}</span>
+                     <span>{t('bottomSideTexts_mobile.14')}</span>
                   </div>
-                  <p className="bottom_side_p4">{t('bottomSideTexts.15')}</p>
+                  <p className="bottom_side_p4">{t('bottomSideTexts_mobile.15')}</p>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.16')}</span>
-                     <span>{t('bottomSideTexts.17')}</span>
-                  </div>
-                  <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.18')} </span>
-                     <span>{t('bottomSideTexts.19')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.16')}</span>
+                     {/* <span>{t('bottomSideTexts_mobile.17')}</span> */}
                   </div>
                   <div className="bottom_side_text_div">
-                     <span>{t('bottomSideTexts.20')}</span>
-                     <span className="bottom_side_span1"> {t('bottomSideTexts.21')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.18')} </span>
+                     <span>{t('bottomSideTexts_mobile.19')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.22')}</span>
+                     <span>{t('bottomSideTexts_mobile.20')}</span>
+                     <span className="bottom_side_span1"> {t('bottomSideTexts_mobile.21')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.23')}</span>
-                     <span>{t('bottomSideTexts.24')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.22')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span>{t('bottomSideTexts.25')} </span>
-                     <span className="bottom_side_span1">{t('bottomSideTexts.26')}</span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.23')}</span>
+                     <span>{t('bottomSideTexts_mobile.24')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span>{t('bottomSideTexts.27')}</span>
+                     <span>{t('bottomSideTexts_mobile.25')} </span>
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.26')}</span>
                   </div>
                   <div className="bottom_side_text_div">
-                     <span className="bottom_side_span1">{t('bottomSideTexts.28')}</span>
+                     <span>{t('bottomSideTexts_mobile.27')}</span>
+                  </div>
+                  <div className="bottom_side_text_div">
+                     <span className="bottom_side_span1">{t('bottomSideTexts_mobile.28')}</span>
                   </div>
                </div>
                <div className="buttons_side">
                   <p style={{ color: 'white' }}>{t('buttonsSide.0')}</p>
                   <div className="buttons_div">
                      <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.1')}</span></button></NavLink>
+                        <NavLink to={`/${leng}/web-project`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.1')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.2')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/website-promotion`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.2')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                        <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.3')}</span></button></NavLink>
-                        
+                        <NavLink to={`/${leng}/support`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.3')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.4')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/3d-modeling`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.4')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.5')}</span></button></NavLink>
-
+                        <NavLink to={`/${leng}/mobile`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.5')}</span>
+                           </button>
+                        </NavLink>
                      </div>
                      <div className="buttons_div_divs">
-                     <NavLink to="/a"><button class="btn-15"><span>{t('buttonsSide.6')}</span></button></NavLink>
-
-                     </div>
+                        <NavLink to={`/${leng}/games`}>
+                           <button class="btn-15">
+                              <span>{t('buttonsSide.6')}</span>
+                           </button>
+                        </NavLink>
+                         </div>
                   </div>
                </div>
             </div>
