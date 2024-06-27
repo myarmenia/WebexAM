@@ -1,6 +1,9 @@
 .registre_full_div {
    min-height: 100vh;
+<<<<<<< HEAD
    padding-bottom: 100px;
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 }
 
 .login {
@@ -100,7 +103,11 @@
    width: 93%;
    max-height: calc(300px - 50px);
    overflow-y: auto;
+<<<<<<< HEAD
    max-height: 450px;
+=======
+   max-height: 370px;
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 }
 .dtoptext_ul {
    color: white;
@@ -124,18 +131,25 @@
    width: 20px;
    height: 20px;
 }
+<<<<<<< HEAD
 .div_ul_task {
    padding-bottom: 20px;
 }
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 
 .task_ul {
    color: white;
    list-style-type: square;
+<<<<<<< HEAD
    padding-left: 50px;
    margin-bottom: 0;
    min-height: 70px;
 }
 
+=======
+}
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 @media (max-width: 1024px) {
    .log_img_div {
       width: 600px;

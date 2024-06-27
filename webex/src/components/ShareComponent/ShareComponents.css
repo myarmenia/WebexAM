@@ -13,7 +13,11 @@
    flex-direction: column;
    align-items: flex-start;
    gap: 10px;
+<<<<<<< HEAD
    background-color: white;
+=======
+   /* background-color: white; */
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.704);
    border-radius: 6px;
    padding: 10px;
@@ -26,7 +30,10 @@
 
 .share_div:hover .share-buttons {
    display: flex;
+<<<<<<< HEAD
    color: black;
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 }
 
 .share_div:hover > span svg path {
@@ -35,7 +42,10 @@
 
 .share-buttons span:hover {
    color: black;
+<<<<<<< HEAD
 }
 .share-buttons button{
    color: black;
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 }

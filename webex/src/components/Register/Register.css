@@ -117,8 +117,13 @@
 
 .button_vector {
    display: flex;
+<<<<<<< HEAD
    justify-content: space-between;
    /* gap: 950px; */
+=======
+   justify-content: space-evenly;
+   gap: 950px;
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 }
 .rotate {
    transform: rotate(180deg);

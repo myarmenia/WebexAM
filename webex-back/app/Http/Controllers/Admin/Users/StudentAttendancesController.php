@@ -19,7 +19,7 @@ class StudentAttendancesController extends Controller
 
         // $update = $user->update(['lesson_quantity' => $lesson_quantity]);
         $result = AttendancesResource::collection($student_attendance);
-// dd($result);
+        // dd($result);
         if($result){
           return response()->json($result);
         }

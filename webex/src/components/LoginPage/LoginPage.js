@@ -57,7 +57,11 @@ function LoginPage() {
 
    const respDevCourses = useSelector(selectDevCoursesData);
 
+<<<<<<< HEAD
   
+=======
+   console.log(respDevCourses, 'ayoooooooo stacvec ');
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
 
    const leng = localStorage.getItem('lang');
 
@@ -209,6 +213,7 @@ function LoginPage() {
          </div>
          <div className="register_drop_down">
             <div className="container">
+<<<<<<< HEAD
                {respDevCourses &&
                   respDevCourses.map((el) => (
                      <div
@@ -225,8 +230,24 @@ function LoginPage() {
                            <div className={`vector_img ${itemId === el.id ? 'rotate' : ''}`}>
                               <img src={vector} alt="" />
                            </div>
+=======
+               {respDevCourses && respDevCourses.map((el) => (
+
+<div
+                     key={el.id}
+                     className="register_drop_down_item"
+                     onClick={() => hnadleChangeItem(el.id)}>
+                     <div className="button_vector">
+                     
+                        <div className="btn_dv">
+                           <button>
+                              {<img src={el.logo} alt="" />} {el.name}
+                           </button>
+                           <p>{el.description}</p>
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
                         </div>
 
+<<<<<<< HEAD
                         <div
                            className="dtoptext_ul"
                            style={{ display: itemId === el.id ? 'block' : 'none' }}>
@@ -245,6 +266,26 @@ function LoginPage() {
                                  </div>
                               ))}
                            </div>
+=======
+                     <div
+                        className="dtoptext_ul"
+                        style={{ display: itemId === el.id ? 'block' : 'none' }}>
+                        <div>
+                           {
+                              el.lessons.map(item => 
+                                 <div key={item.id}>
+                                    <span>{item.title}</span>
+                                    <ul className="task_ul">
+                                      {
+                                       item.tasks.map(task =>
+                                          <li key={task.id}>{task.title}</li>
+                                       )
+                                      }
+                                    </ul>
+                                 </div>
+                              )
+                           }
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
                         </div>
                      </div>
                   ))}

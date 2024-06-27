@@ -408,6 +408,7 @@ function WebProjectPage() {
          </div>
 
          <div className="buttons">
+<<<<<<< HEAD
            <div className="buttons_div_divs">
                         <NavLink to={`/${leng}/web-project`}>
                            <button class="btn-15">
@@ -450,6 +451,50 @@ function WebProjectPage() {
                            </button>
                         </NavLink>
                          </div>
+=======
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.1')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.2')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.3')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.4')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.5')}</span>
+                  </button>
+               </NavLink>
+            </div>
+            <div className="buttons_div_divs">
+               <NavLink to="/a">
+                  <button class="btn-15">
+                     <span>{t('buttonsSide.6')}</span>
+                  </button>
+               </NavLink>
+            </div>
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
          </div>
       </div>
    );

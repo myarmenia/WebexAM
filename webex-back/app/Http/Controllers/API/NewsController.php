@@ -22,7 +22,6 @@ class NewsController extends Controller
     public function getNewsByCategories()
     {
         $news = $this->newsService->getNewsByCategories();
-
         return NewsResourceByCategory::collection($news);
     }
 

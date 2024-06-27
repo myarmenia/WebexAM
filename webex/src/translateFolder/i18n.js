@@ -585,9 +585,21 @@ i18n.use(initReactI18next).init({
                'Mobile App Development',
                'Unity Development',
             ],
+<<<<<<< HEAD
            
 
            
+=======
+            //===============================
+
+            dropTxt_1: ['element1', 'element2', 'element3', 'element4'],
+
+            dropTxt_2: ['tandz1', 'tandz2', 'tandz3', 'tandz4'],
+
+            dropTxt_3: ['shmavon1', 'shmavon2', 'shmavon3', 'shamvon4'],
+
+            // ============================
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
             /////3d modeling///////////
             topSideUntilSlider: [
                '3D modeling',
@@ -988,6 +1000,7 @@ i18n.use(initReactI18next).init({
             ],
 
             canvas3D: ['Deactivate control', 'Activate control'],
+<<<<<<< HEAD
 
             proj: [
                "Birthday Invitation Card",
@@ -996,6 +1009,8 @@ i18n.use(initReactI18next).init({
             ],
 
             projTitle: 'Web Invitations'
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
          },
       },
       am: {
@@ -1982,6 +1997,7 @@ i18n.use(initReactI18next).init({
                'Կոնսոլային խաղերի ստեղծում (PS, Xbox, Wii եւ այլն)',
             ],
 
+<<<<<<< HEAD
             canvas3D: ['Պասիվ. կառավարում', 'Ակտիվ կառավարումը, '],
 
             proj: [
@@ -1992,6 +2008,9 @@ i18n.use(initReactI18next).init({
             ],
 
             projTitle: 'Վեբ հրավիրատոմսեր'
+=======
+            canvas3D: ['Պասիվ. կառավարում', 'Ակտիվ կառավարումը '],
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
          },
       },
 
@@ -3025,6 +3044,7 @@ i18n.use(initReactI18next).init({
             ],
 
             canvas3D: ['Пасив. контроль', 'Актив контроль'],
+<<<<<<< HEAD
 
             proj: [
                'Приглашение на день рождения',
@@ -3034,6 +3054,8 @@ i18n.use(initReactI18next).init({
             ],
 
             projTitle: 'Веб-приглашения'
+=======
+>>>>>>> 5b3e4d2c42825e3f681a1db1d368fbe436ed55fd
          },
       },
       // Add more languages as needed
